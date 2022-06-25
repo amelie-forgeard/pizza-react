@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div>Pizza Customisation</div>
+        <div style={{ color: "white", backgroundColor: "black" }}>Pizza Customisation</div>
     )
 }
 
