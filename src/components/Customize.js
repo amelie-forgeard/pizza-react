@@ -53,8 +53,8 @@ export default function Customize({ ingredients, setIngredients }) {
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{
-                            y: ingredients["pineapple"] ? 100 : -100,
-                            opacity: ingredients["pineapple"] ? 1 : 0,
+                            y: ingredients["ananas"] ? 100 : -100,
+                            opacity: ingredients["ananas"] ? 1 : 0,
                         }}
                         transition={{ duration: 1 }}
                         className="ingredients z3"
@@ -104,63 +104,63 @@ export default function Customize({ ingredients, setIngredients }) {
             </div>
             <div style={{ flex: 1, padding: 40 }}>
                 <label className="container-checkbox">
-                    Pineapple
+                    Ananas
                     <input
                         type="checkbox"
-                        checked={ingredients["pineapple"]}
+                        checked={ingredients["ananas"]}
                         onChange={(event) =>
-                            onChange(event.currentTarget.checked, "pineapple")
+                            onChange(event.currentTarget.checked, "ananas")
                         }
                     />
                     <span className="checkmark"></span>
                 </label>
                 <label className="container-checkbox">
-                    Basil
+                    Basilic
                     <input
                         type="checkbox"
-                        checked={ingredients["basil"]}
-                        onChange={(event) => onChange(event.currentTarget.checked, "basil")}
+                        checked={ingredients["basilic"]}
+                        onChange={(event) => onChange(event.currentTarget.checked, "basilic")}
                     />
                     <span className="checkmark"></span>
                 </label>
                 <label className="container-checkbox">
-                    Olive
+                    Olives
                     <input
                         type="checkbox"
-                        checked={ingredients["olive"]}
-                        onChange={(event) => onChange(event.currentTarget.checked, "olive")}
+                        checked={ingredients["olives"]}
+                        onChange={(event) => onChange(event.currentTarget.checked, "olives")}
                     />
                     <span className="checkmark"></span>
                 </label>
                 <label className="container-checkbox">
-                    Tomato
+                    Tomates
                     <input
                         type="checkbox"
-                        checked={ingredients["tomato"]}
+                        checked={ingredients["tomates"]}
                         onChange={(event) =>
-                            onChange(event.currentTarget.checked, "tomato")
+                            onChange(event.currentTarget.checked, "tomates")
                         }
                     />
                     <span className="checkmark"></span>
                 </label>
                 <label className="container-checkbox">
-                    Mushroom
+                    Champignons
                     <input
                         type="checkbox"
-                        checked={ingredients["mushroom"]}
+                        checked={ingredients["champignons"]}
                         onChange={(event) =>
-                            onChange(event.currentTarget.checked, "mushroom")
+                            onChange(event.currentTarget.checked, "champignons")
                         }
                     />
                     <span className="checkmark"></span>
                 </label>
                 <label className="container-checkbox">
-                    Cheese
+                    Fromage
                     <input
                         type="checkbox"
-                        checked={ingredients["cheese"]}
+                        checked={ingredients["chefromageese"]}
                         onChange={(event) =>
-                            onChange(event.currentTarget.checked, "cheese")
+                            onChange(event.currentTarget.checked, "fromage")
                         }
                     />
                     <span className="checkmark"></span>

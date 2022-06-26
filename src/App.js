@@ -10,12 +10,12 @@ export default function App() {
     // on crée un state pour la gestion des ingredients:
     // dans le state initial j'ai aucun ingrédient
     const [ingredients, setIngredients] = useState({
-        basil: false,
-        cheese: false,
-        mushroom: false,
-        olive: false,
-        pineapple: false,
-        tomato: false,
+        basilic: false,
+        fromage: false,
+        champignons: false,
+        olives: false,
+        ananas: false,
+        tomates: false,
     });
 
     // pour conserver en memoire l'affichage des ingredients sélectionnés via le localStorage et les intégrer dans le state garce au useEffect:

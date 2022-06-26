@@ -21,7 +21,7 @@ export default function Header() {
                         fontFamily: "Alata,sans-serif",
                     }}
                 >
-                    Pizza Customization
+                    Créez votre Pizza !
                 </div>
             </div>
         </div>
