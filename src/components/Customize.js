@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom";
 
 export default function Customize({ ingredients, setIngredients }) {
+    // history = objet qui va permettre de mannipuler le state du navigateur
     let history = useHistory();
 
     // fct qui gère le changement de state 
@@ -163,11 +164,13 @@ export default function Customize({ ingredients, setIngredients }) {
                     />
                     <span className="checkmark"></span>
                 </label>
+                {/* bouton: au clic, j'emmene les infos de l'objet history dans le component qui se trouve sur la route /checkout */}
+                {/* et je suis redirect vers cette route */}
                 <button
                     onClick={() => history.push("/checkout")}
                     className="proceedToCheckout"
                 >
-                    Proceed to Checkout
+                    Récupérer ma pizza
                 </button>
             </div>
         </div>

@@ -23,16 +23,10 @@ export default function App() {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <Customize
-                            ingredients={ingredients}
-                            setIngredients={setIngredients}
-                        />
+                        <Customize ingredients={ingredients} setIngredients={setIngredients} />
                     </Route>
                     <Route path="/checkout">
-                        <Checkout
-                        // ingredients={ingredients} 
-
-                        />
+                        <Checkout ingredients={ingredients} />
                     </Route>
                 </Switch>
             </Router>
