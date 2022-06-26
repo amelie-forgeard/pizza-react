@@ -52,6 +52,7 @@ export default function Checkout({ ingredients }) {
                             Commande reçue
                         </div>
                         <div style={{ fontFamily: "Comfortaa" }}>
+                            {/* attribuer un nombre au hasard: */}
                             Numéro #{Math.round(Math.random() * 100000)}
                         </div>
                         <div style={{ fontFamily: "Indie Flower", fontSize: 20 }}>

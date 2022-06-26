@@ -1,5 +1,5 @@
 // import React, { useState, useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -17,6 +17,15 @@ export default function App() {
         pineapple: false,
         tomato: false,
     });
+
+    // pour conserver en memoire l'affichage des ingredients sélectionnés via le localStorage et les intégrer dans le state garce au useEffect:
+    useEffect(() => {
+        const data = localStorage.getItem("ingredients");
+        if (data) {
+            setIngredients(JSON.parse(data));
+        }
+    }, []);
+
     return (
         <div className="App">
             <Header />

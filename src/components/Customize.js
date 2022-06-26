@@ -15,10 +15,11 @@ export default function Customize({ ingredients, setIngredients }) {
 
     // fct qui gère le changement de state 
     const onChange = (event, name) => {
-        console.log(localStorage);
+        // console.log(localStorage);
         let newIngredients = JSON.parse(JSON.stringify(ingredients));
         newIngredients[name] = event;
         setIngredients(newIngredients);
+        // je stocke les ingredients sélectionnés dans le localStorage
         localStorage.setItem("ingredients", JSON.stringify(newIngredients));
     };
 
